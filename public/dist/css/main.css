@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --greenLight-color: #40532c;
+    --white-color: #eff2ec;
+    --black-color: #050302;
+    --greenDark-color: #192013;
+}
+
+/*=====================*/
+/*     Font Family     */
+/*=====================*/
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+}
+input,
+textarea,
+.font-montserrat {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+/* HEADER */
+
+.bg-navbar {
+    background: var(--greenDark-color);
+}
+
+.logo-header {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* FOOTER */
+
+.logo-footer {
+    width: 10rem;
+    height: 10rem;
+}
+
+.ul-footer li {
+    list-style: none;
+    color: var(--greenDark-color);
+    cursor: pointer;
+}
+
+.ul-footer li:hover {
+    color: var(--black-color);
+}
+.footer-two {
+    background-color: var(--black-color);
+}
+
+.footer-two p {
+    color: var(--white-color);
+}
+
+/*=====================*/
+/* Reservartion Page   */
+/*=====================*/
+.bg-reservation-enlign {
+    top: 0;
+    left: 0;
+    background: var(--black-color);
+}
+
+.reserver-cards {
+    padding-top: 8rem !important;
+    padding-bottom: 16rem !important;
+}
+
+.btn-hero-section:hover {
+    background: var(--greenLight-color) !important;
+}
+
+.btn-hero-section {
+    color: white;
+    border-color: var(--greenLight-color) !important;
+}
+
+.bg-gradient-bttom {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    bottom: 0;
+    left: 0;
+}
+
+.reserver-card {
+    background: var(--greenLight-color);
+}
+
+.card-header-icon {
+    width: 3.75rem;
+    height: auto;
+}
+
+.bg-reserver-card {
+    transform: translateX(-5px) translateY(5px);
+    background: var(--white-color);
+}
+
+/*=====================*/
+/*      Home Page      */
+/*=====================*/
+
+.home_btn-hero-secrion {
+    background: var(--greenLight-color);
+    color: white;
+}
+
+.home_btn-hero-secrion:hover {
+    background: var(--greenLight-color);
+    color: white;
+}
+
+.icon-cards-info {
+    height: 4.25rem;
+    width: auto;
+}
+
+.title-cards-color {
+    color: var(--greenLight-color);
+}
+
+/* jeux style */
+
+.slider {
+    margin-bottom: 30px;
+    position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1);
+    opacity: 1;
+}
+.slider-card {
+    padding: 0px 0px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+    transform: scale(0.8);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+.owl-dots {
+    text-align: center;
+}
+.owl-dots .owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: var(--white-color) !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+.owl-dots .owl-dot.active {
+    background: var(--greenLight-color) !important;
+}
+
+/* game description style */
+
+#about {
+    background: #a4d17676;
+}
+input:focus,
+textarea:focus {
+    border-color: var(--greenLight-color) !important;
+    outline-color: var(--greenLight-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.16) !important;
+}
+
+input,
+textarea {
+    background: var(--white-color) !important;
+}
+
+.contact-icon {
+    color: var(--white-color) !important;
+}
+
+.glass {
+    position: absolute;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.0765);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 991px) {
+    .glass {
+        height: 800px;
+    }
+}
+
+.curs {
+    cursor: pointer;
+}
+.curs {
+    transition: transform 0.5s ease;
+}
+
+.curs:hover {
+    transform: scale(1.1);
+}
+
+.loader-wrapper {
+    z-index: 9999 !important;
+}

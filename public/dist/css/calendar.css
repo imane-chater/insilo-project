@@ -1,0 +1,21 @@
+.toastui-calendar-see-more-container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.toastui-calendar-weekday-grid > div:nth-child(1),
+.toastui-calendar-weekday-grid > div:nth-child(2),
+.toastui-calendar-weekday-grid > div:nth-child(3),
+.toastui-calendar-weekday-grid > div:nth-child(4),
+.toastui-calendar-weekday-grid > div:nth-child(5),
+.toastui-calendar-weekday-grid > div:nth-child(6) {
+    display: none;
+}
+
+/* Style Saturdays to stand out */
+.toastui-calendar-weekday-grid > div:nth-child(7) {
+    /* Saturday */
+    background-color: #ffffff !important; /* Keep Saturday as is */
+    opacity: 1 !important; /* Full opacity */
+}
